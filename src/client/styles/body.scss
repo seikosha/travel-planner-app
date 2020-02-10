@@ -8,7 +8,8 @@
 @media (max-width:600px)
 {
     body {
-        width:120%;
+        width:60%;
+        margin-left: 4em;
     }
     body #main {
         display: flex;
@@ -21,6 +22,8 @@
         width: 24em;
         height: 24em;
     }
+
+
 }
 
 body {
@@ -62,6 +65,7 @@ body {
     height: 2em;
     margin-bottom: 1em;
     border: 2px solid;
+    cursor: pointer;
 }
 
 #date {
@@ -69,6 +73,7 @@ body {
     background: none;
     height: 2em;
     border: 2px solid;
+    cursor: pointer;
 }
 
 #submit {

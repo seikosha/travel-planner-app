@@ -1,3 +1,5 @@
+document.getElementById('submit').addEventListener('click', performAction);
+
 function performAction(event) {
   event.preventDefault()
 
