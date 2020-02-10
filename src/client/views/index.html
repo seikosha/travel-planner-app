@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Planner</title>
+
+</head>
+<body>
+    <header id='header'>Travel Planner</header>
+    <section id="main">
+        <section>
+            <img id="image" alt="citypages" src="../../../media/testpage.png">
+        </section>
+        <section id="rightzone">
+            <div id="userinput">
+                <div id="typein">
+                    <input type="text" id="location">
+                    <input type="date" id="date">
+                </div>
+                <div id="button">
+                    <input type="submit" id= "submit" value="submit" onclick="return Client.performAction(event)" onsubmit="return Client.performAction(event)">
+                </div>
+            </div>
+            <div id="countdown">
+                <span id="countdowndays"></span> days to your dream journey!!
+            </div>
+        </section>
+    </section>
+    <section id="returnResults">
+        <div class="resultsHeader" id="weather">
+            Weather</br>
+            <p id='summary'></p>
+        </div>
+        <div class="resultsHeader" id="temperature">
+            Temperature</br>
+            <p>Lowest <span id="lowtemp"></span> F~Highest <span id="hightemp"></span><span> F</span></p>
+        </div>
+    </section>
+    <footer>powered by Z
+        <input type='button' value='Print' onclick='window.print()' id='print' />
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>
