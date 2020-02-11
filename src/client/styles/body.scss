@@ -6,9 +6,9 @@
 }
 
 @media (max-width:600px)
-{
+{  
     body {
-        width:60%;
+        width:50%;
         margin-left: 4em;
     }
     body #main {
@@ -19,10 +19,49 @@
     }
 
     body #image {
-        width: 24em;
-        height: 24em;
+        padding: 1rem;
+        text-align: center;
+        width: 16em;
+        height: 16em;
     }
 
+    body #location {
+        border-radius: 12px;
+        background: none;
+        height: 1em;
+        margin-bottom: 0.5em;
+        border: 1px solid;
+        text-align: center;
+        margin-left: 2em;
+    }
+    
+    body #date {
+        border-radius: 12px;
+        background: none;
+        height: 1em;
+        border: 1px solid;
+        margin-bottom: 2em;
+        text-align: center;
+        margin-left: 4em;
+    }
+    
+    body #submit {
+        border-radius: 12px;
+        width: 6em;
+        height: 1.5em;
+        background: none;
+        border: solid 1px;
+        margin-bottom: 3em;
+        margin-left: 1em;
+    }
+
+    body #returnResults {
+        font-size: 1em;
+    }
+
+    body #countdown  {
+        font-weight: normal;
+    }
 
 }
 
@@ -65,7 +104,6 @@ body {
     height: 2em;
     margin-bottom: 1em;
     border: 2px solid;
-    cursor: pointer;
 }
 
 #date {
@@ -73,7 +111,6 @@ body {
     background: none;
     height: 2em;
     border: 2px solid;
-    cursor: pointer;
 }
 
 #submit {
@@ -83,7 +120,6 @@ body {
     background: none;
     border: solid 2px;
     margin-bottom: 5em;
-    cursor: pointer;
 }
 
 #returnResults {
@@ -106,6 +142,10 @@ body {
     font-weight: bold;
 }
 
+#countdowntext {
+    text-align: center;
+}
+
 #print {
     border-radius: 12px;
     width: 6em;
@@ -113,5 +153,20 @@ body {
     background: none;
     border: solid 2px;
     float: right;
+}
+
+#print:hover {
+    cursor: pointer;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#location:hover {
+    cursor: pointer;
+}
+
+#date:hover {
     cursor: pointer;
 }
